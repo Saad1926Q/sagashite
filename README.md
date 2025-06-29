@@ -6,7 +6,14 @@ The idea is that users can search for animes by describing what they are looking
 
 For example, if they search "anime about pirates," it will recommend One Piece and other animes about pirates.
 
-## Concept
+![Demo](sagashite_gif.gif)
+
+> *(Side note: I know this is a bit unrelated, but I had actually tried building something similar 4–5 months ago and failed pretty miserably. So I'm honestly kinda happy that this time I was able to get something working!)*
+
+[Here's](https://www.notion.so/So-I-Made-an-Anime-Search-Thingy-221f1129214e8018b3cfea704d3fb542?source=copy_link) a bit more detailed write-up.
+
+
+## About The Implementation
 
 So I took the latest anime data I could find from [here](https://www.kaggle.com/datasets/abhijithkumble/my-anime-list-anime-data)
 
@@ -28,7 +35,8 @@ Initially, I used a very basic model (one which was recommended in the docs), na
 
 so I ended up using an instructor model i.e. basically a model which takes in a prompt and then based on that prompt it creates the embedding
 
-I used **hkunlp/instructor-base** with the prompt "Represent the anime description for recommending similar anime"
+I used **hkunlp/instructor-base** with the prompt:
+> "Represent the anime description for recommending similar anime"
 
 with this I was getting quite accurate results so I moved forward with this
 
@@ -50,4 +58,4 @@ Rest of the project is just basic React and FastAPI which I don't think is inter
 
 So I guess I'll wrap up with that
 
-Also if you liked the thing then do star it 👉👈
+> Also if you liked the thing then do star it 👉👈
